@@ -1,0 +1,23 @@
+<html>
+
+<head>
+</head>
+
+<body>
+  <input id="sit"><--- Type Email Here</input>
+	<button onclick="openGame()">Submit</button>
+	<script>
+		function openGame() {
+var win = window.open()
+var input = document.getElementById('sit').value;
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = input
+win.document.body.appendChild(iframe)
+}
+	</script>
+</body>
+
+</html>
